@@ -1,39 +1,78 @@
+/* Page background */
 body {
   background-color: #f4f4f4;
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
+/* Main quiz box */
 .quiz-container {
-  background-color: #fff;
+  background-color: #ffffff;
   width: 400px;
   margin: 100px auto;
-  padding: 20px;
+  padding: 20px 25px;
   border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Question text */
 h2 {
   text-align: center;
+  margin-bottom: 20px;
 }
 
+/* Answer list */
 ul {
   list-style-type: none;
   padding: 0;
 }
 
 li {
-  margin: 10px 0;
+  margin: 12px 0;
+  font-size: 15px;
 }
 
-button {
-  width: 100%;
-  padding: 10px;
-  background-color: #3498db;
-  color: white;
-  border: none;
-  font-size: 16px;
+/* Radio buttons spacing */
+.answer {
+  margin-right: 10px;
   cursor: pointer;
 }
 
-button:hover {
+/* Buttons container */
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+/* Prev & Next buttons */
+#prev,
+#next {
+  width: 48%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+#prev:hover,
+#next:hover {
   background-color: #2980b9;
+}
+
+/* Disabled Prev button */
+#prev:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+/* Result screen button */
+.quiz-container button {
+  margin-top: 15px;
 }
